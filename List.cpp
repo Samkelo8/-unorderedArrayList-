@@ -1,4 +1,4 @@
-
+//headers
 #include "StdAfx.h"
 #include <iostream>
 #include "List.h"
@@ -12,10 +12,10 @@ List::List(void)
 List::~List(void)
 {
 }
-
+//check if list is full or empry
 bool List::IsEmpty () { return size==0;}
 bool List::IsFull () {return (size == MaxSize); }
-
+//insert data to list
 void List::Insert (DataType e)
 {
  if (!(IsFull()))
@@ -33,7 +33,7 @@ void Swap (DataType& x, DataType& y)
   x = y;
   y =Temp;
 }                                  
-
+//delete data
 void List::Delete (DataType e)
 { 
  int index = 0;    
@@ -49,7 +49,7 @@ if  (!(IsEmpty()))
   }
 }
 
-
+//display data
 void List::ShowData ()
 {
  for (int index = 0; index < size; index++)

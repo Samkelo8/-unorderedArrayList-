@@ -1,5 +1,5 @@
 #pragma once
-
+//defining maximum size
 const int MaxSize = 15;
 typedef  int DataType;
 
@@ -15,7 +15,7 @@ public:
 List(void); //constructor -- can be overloaded; not a member function
 ~List(void);
 // data members - usually public, some may be private
-	
+//functions prototypes	
 bool IsEmpty ();
 bool IsFull  ();
 void  Insert (DataType);

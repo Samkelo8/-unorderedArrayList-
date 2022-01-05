@@ -8,7 +8,7 @@
 int _tmain(int argc, _TCHAR* argv[])
 {
 List L;
-
+//calling functions
 L.Insert (10); L.Insert (15); L.Insert (20);
 L.ShowData ();
 L.Delete (15); 

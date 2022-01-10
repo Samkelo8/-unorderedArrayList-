@@ -1,6 +1,6 @@
 
 //experimental comment
-
+//to test changes
 //headers
 #include "StdAfx.h"
 #include <iostream>
@@ -30,6 +30,7 @@ void List::Insert (DataType e)
 
 
 /* ordinary function - not a member function */
+
 //function to swap
 void Swap (DataType& x, DataType& y)
 {                                
@@ -49,7 +50,7 @@ if  (!(IsEmpty()))
     if (Item[index] == e)
     {  
      Swap (Item[index], Item[size-1]);
-     size--;
+     size--;//reduce size
     }
   }
 }
@@ -62,4 +63,4 @@ void List::ShowData ()
     cout << endl;//endline after displaying data
 	
 }
-
+//end of code

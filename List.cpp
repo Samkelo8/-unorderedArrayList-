@@ -1,3 +1,6 @@
+
+//experimental comment
+
 //headers
 #include "StdAfx.h"
 #include <iostream>
@@ -12,10 +15,11 @@ List::List(void)
 List::~List(void)
 {
 }
-//check if list is full or empry
+//check if list is full or empty
 bool List::IsEmpty () { return size==0;}
 bool List::IsFull () {return (size == MaxSize); }
 //insert data to list
+
 void List::Insert (DataType e)
 {
  if (!(IsFull()))
@@ -26,6 +30,7 @@ void List::Insert (DataType e)
 
 
 /* ordinary function - not a member function */
+//function to swap
 void Swap (DataType& x, DataType& y)
 {                                
   DataType Temp;
@@ -54,7 +59,7 @@ void List::ShowData ()
 {
  for (int index = 0; index < size; index++)
     cout << Item[index] << "   ";
-    cout << endl;
+    cout << endl;//endline after displaying data
 	
 }
 

@@ -1,16 +1,16 @@
-#pragma once
+//first cpp file
 //defining maximum size
 const int MaxSize = 15;
 typedef  int DataType;
 //creating a class
 class List
 {
-
+//private members
 private:
 // data members - usually private
 int size;
 DataType Item [MaxSize];
-
+//public members
 public:
 List(void); //constructor -- can be overloaded; not a member function
 ~List(void);
@@ -23,3 +23,4 @@ void  Delete (DataType);
 void  ShowData ();//prototype function for displaying output
 
 };
+///end of code

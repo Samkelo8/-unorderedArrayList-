@@ -1,6 +1,8 @@
 
 //experimental comment
 //to test changes
+
+
 //headers
 #include "StdAfx.h"
 #include <iostream>
@@ -9,7 +11,7 @@
 using namespace std;
 
 List::List(void)
-{size = 0;}
+{size = 0;}//declaring list
 
 
 List::~List(void)
@@ -18,8 +20,8 @@ List::~List(void)
 //check if list is full or empty
 bool List::IsEmpty () { return size==0;}
 bool List::IsFull () {return (size == MaxSize); }
-//insert data to list
 
+//insert data to list
 void List::Insert (DataType e)
 {
  if (!(IsFull()))
@@ -52,7 +54,6 @@ if  (!(IsEmpty()))
      Swap (Item[index], Item[size-1]);
      size--;//reduce size
     }
-  }
 }
 
 //display data
@@ -61,6 +62,7 @@ void List::ShowData ()
  for (int index = 0; index < size; index++)
     cout << Item[index] << "   ";
     cout << endl;//endline after displaying data
+    cout<<" program done";
 	
 }
 //end of code
